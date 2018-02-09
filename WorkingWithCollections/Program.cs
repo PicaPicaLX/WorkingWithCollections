@@ -84,13 +84,9 @@ namespace WorkingWithCollections
             string value = Console.ReadLine();
             foreach (Car car in myList) // 遍历
             {
-                if (car.Make==value) // 判断用户输入是否在集合中存在
+                while (car.Make==value)
                 {
-                    Console.WriteLine("{0} {1} {2}", car.Make, car.Model, car.VIN);
-                }
-                else
-                {
-                    Console.WriteLine("Sorry, we don't have this car.");
+                    conso
                 }
             }
             Console.ReadLine();
