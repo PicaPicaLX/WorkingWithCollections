@@ -11,6 +11,7 @@ namespace WorkingWithCollections
     {
         static void Main(string[] args)
         {
+            /*
             Car car1 = new Car();
             car1.Make = "Oldmobile";
             car1.Model = "Cutlas Supreme";
@@ -23,7 +24,8 @@ namespace WorkingWithCollections
             book1.Aythor = "Robert Tabor";
             book1.Title = "Microsoft .NET XML Web Services";
             book1.ISBN = "0-000-00000-0";
-                       
+            */
+
             /*
             // 建立泛型列表，可以自定义其允许容纳的元素的类
             List<Car> myList = new List<Car>();
@@ -55,7 +57,9 @@ namespace WorkingWithCollections
 
             // 建立词典集合，类似于网络搜索，可以按照字母顺序查找元素，并且可以在找到的元素旁看到定义
             // 这种集合只包含键和其值，因此也称为泛型词典集合
-
+//--------------------------------------------------------------------------------------------------------------------------------
+            //Car car1 = new Car() { Make = "BMW", Model = "750Li", VIN = "C3" }; // 对象初始化
+            //Car car2 = new Car() { Make = "Buick", Model = "LaCrosse", VIN = "666" }; // 对象初始化
 
 
 
@@ -67,6 +71,7 @@ namespace WorkingWithCollections
 
     class Car
     {
+        public string VIN { get; set; }
         public string Make { get; set; }  
         public string Model { get; set; }
     }
